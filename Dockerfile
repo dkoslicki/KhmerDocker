@@ -15,5 +15,4 @@ RUN python2.7 -m virtualenv khmerEnv && \
  source /khmerEnv/bin/activate
  
 #Install Khmer
-RUN pip2 install khmer && \
- source /khmerEnv/bin/activate
+RUN pip2 install khmer
