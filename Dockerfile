@@ -11,8 +11,11 @@ RUN apt-get update -y && \
  apt-get install -y g++
 
 #Create a virtual environment and activate it
-RUN python2.7 -m virtualenv khmerEnv && \
- source /khmerEnv/bin/activate
+RUN python2.7 -m virtualenv khmerEnv
  
 #Install Khmer
 RUN pip2 install khmer
+
+#Make sure to run 
+# source /khmerEnv/bin/activate 
+# before trying to use the scripts
